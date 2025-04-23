@@ -1,10 +1,3 @@
-# 添加这些内容在 Dockerfile 顶部
-ARG BUILD_DATE
-ARG VCS_REF
-LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.vcs-ref=$VCS_REF \
-      org.label-schema.vcs-url="https://github.com/hhdebb/drone-cdn-refresh"
-
 # 使用官方 Node.js 18 镜像作为基础镜像
 FROM node:18-alpine
 
