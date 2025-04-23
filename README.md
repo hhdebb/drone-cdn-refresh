@@ -71,7 +71,7 @@ npm start
 
 ```bash
 docker run \
-  -e cdnTagName=vant_demo \
+  -e cdnResourceTagName=vant_demo \
   -e REFRESH_TYPE=Directory \
   -e API_URL=https://api.example.com/cdn-dcdn-config \
   your-docker-username/drone-cdn-refresh
@@ -84,7 +84,7 @@ steps:
   - name: refresh-cdn
     image: your-docker-username/drone-cdn-refresh
     environment:
-      cdnTagName: vant_demo|vue_test3
+      cdnResourceTagName: vant_demo|vue_test3
       REFRESH_TYPE: Directory
       API_URL: https://api.example.com/cdn-dcdn-config
 ```
