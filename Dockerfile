@@ -21,5 +21,5 @@ COPY . .
 # REFRESH_TYPE - 刷新类型 (File/Directory)，默认为Directory
 # API_URL - API接口地址
 
-# 启动命令
-CMD ["npm", "start"]
+# 启动命令 - 直接使用node命令而不是npm脚本
+CMD ["node", "src/index.js"]
