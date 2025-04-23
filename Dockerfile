@@ -13,8 +13,10 @@ RUN npm install
 # 将项目文件复制到工作目录
 COPY . .
 
-# 暴露应用运行的端口（根据你的应用实际端口修改）
-EXPOSE 3000
+# 环境变量配置说明
+# cdnResourceTagName - 标签名称，多个标签用|分隔
+# REFRESH_TYPE - 刷新类型 (File/Directory)，默认为Directory
+# API_URL - API接口地址
 
-# 定义容器启动时运行的命令（根据你的应用启动命令修改）
+# 启动命令
 CMD ["npm", "start"]

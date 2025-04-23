@@ -1,0 +1,43 @@
+{
+    "code": 1,
+    "msg": "请求成功",
+    "time": "1745410300",
+    "data": {
+        "cdn": {
+            "sms": [
+                {
+                    "access": {
+                        "accessKeyId": "LTAI5tC8Gx7yY",
+                        "createDate": "2025-03-08T01:49:55Z",
+                        "status": "Active",
+                        "accessKeySecret": "N82pLTBAf36XSdN"
+                    },
+                    "domains": [
+                        "https://test1.example.com/",
+                        "https://test2.example.com/",
+                        "https://test3.example.com/",
+                        "https://test4.example.com/"
+                    ]
+                }
+            ]
+        },
+        "dcdn": {
+            "ytd": [
+                {
+                    "access": {
+                        "accessKeyId": "LTAI5tC8Gx7yY",
+                        "createDate": "2025-03-08T01:49:55Z",
+                        "status": "Active",
+                        "accessKeySecret": "N82pLTBAf36XSdNar"
+                    },
+                    "domains": [
+                        "https://test1.example.com/",
+                        "https://tes2.example.com/",
+                        "https://test3.example.com/",
+                        "https://test4.example.com/"
+                    ]
+                }
+            ]
+        }
+    }
+}

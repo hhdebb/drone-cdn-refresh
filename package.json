@@ -1,6 +1,19 @@
 {
+  "name": "drone-cdn-refresh",
+  "version": "1.0.0",
+  "description": "阿里云CDN和DCDN缓存刷新工具",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "dependencies": {
     "@alicloud/cdn20180510": "^5.0.0",
-    "@alicloud/dcdn20180115": "^2.5.0"
+    "@alicloud/dcdn20180115": "^2.5.0",
+    "@alicloud/openapi-client": "^0.4.7",
+    "@alicloud/tea-util": "^1.4.0",
+    "@alicloud/credentials": "^2.3.0",
+    "@alicloud/tea-typescript": "^1.8.0",
+    "axios": "^1.6.3",
+    "dotenv": "^16.3.1"
   }
 }
