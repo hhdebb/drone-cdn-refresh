@@ -269,11 +269,13 @@ class RefreshManager {
       }
       
       // 输出所有标签的处理汇总
-      log("所有刷新操作完成");
+      console.log("✅缓存刷新执行成功");
       
       return allResults;
-    } catch (error) {
-      log(`刷新操作失败: ${error.message}`, true);
+    } 
+    catch (error) 
+    {
+      console.error(`🚨缓存刷新执行失败: ${error.message}`, true);
       process.exit(1);
     }
   }
