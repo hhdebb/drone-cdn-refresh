@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # 环境变量配置说明
-# cdnResourceTagName - 标签名称，多个标签用|分隔
+# CDN_RESOURCE_TAG_NAME - 标签名称，多个标签用|分隔
 # REFRESH_TYPE - 刷新类型 (File/Directory)，默认为Directory
 # API_URL - API接口地址
 

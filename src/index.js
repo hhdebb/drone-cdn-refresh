@@ -225,7 +225,7 @@ class RefreshManager {
   static async main() {
     try {
       // 从环境变量获取配置
-      const tagNamesString = process.env.cdnResourceTagName;
+      const tagNamesString = process.env.CDN_RESOURCE_TAG_NAME;
       const objectType = process.env.REFRESH_TYPE || "Directory";
       
       if (!tagNamesString) {

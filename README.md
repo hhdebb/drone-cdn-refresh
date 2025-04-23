@@ -14,7 +14,7 @@
 
 | 环境变量 | 说明 | 必填 | 示例 |
 |---------|------|-----|------|
-| cdnResourceTagName | 标签名称，多个标签用\|分隔 | 是 | vant_demo\|vue_test3 |
+| CDN_RESOURCE_TAG_NAME | 标签名称，多个标签用\|分隔 | 是 | vant_demo\|vue_test3 |
 | REFRESH_TYPE | 刷新类型 | 否，默认Directory | File 或 Directory |
 | API_URL | API接口地址 | 否，有默认值 | https://api.example.com/cdn-dcdn-config |
 
@@ -28,7 +28,7 @@ cp .env.example .env
 2. 修改.env文件中的配置
 ```
 # 配置标签名称,多个使用竖线分割
-cdnResourceTagName=vant_demo|vue_test3
+CDN_RESOURCE_TAG_NAME=vant_demo|vue_test3
 
 # 刷新类型(File/Directory)
 REFRESH_TYPE=Directory
@@ -45,7 +45,7 @@ npm start
 
 ## 工作流程
 
-1. 从环境变量获取标签名称(cdnResourceTagName)
+1. 从环境变量获取标签名称(CDN_RESOURCE_TAG_NAME)
 2. 请求外部API接口获取对应标签的CDN和DCDN配置
 3. 根据配置信息，分别调用阿里云CDN和DCDN API进行缓存刷新
 4. 返回刷新结果统计
@@ -71,7 +71,7 @@ npm start
 
 ```bash
 docker run \
-  -e cdnResourceTagName=vant_demo \
+  -e CDN_RESOURCE_TAG_NAME=vant_demo \
   -e REFRESH_TYPE=Directory \
   -e API_URL=https://api.example.com/cdn-dcdn-config \
   your-docker-username/drone-cdn-refresh
@@ -84,7 +84,7 @@ steps:
   - name: refresh-cdn
     image: your-docker-username/drone-cdn-refresh
     environment:
-      cdnResourceTagName: vant_demo|vue_test3
+      CDN_RESOURCE_TAG_NAME: vant_demo|vue_test3
       REFRESH_TYPE: Directory
       API_URL: https://api.example.com/cdn-dcdn-config
 ```
