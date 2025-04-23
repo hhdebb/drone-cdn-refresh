@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@alicloud/cdn20180510": "^5.0.0",
+    "@alicloud/dcdn20180115": "^2.5.0"
+  }
+}
